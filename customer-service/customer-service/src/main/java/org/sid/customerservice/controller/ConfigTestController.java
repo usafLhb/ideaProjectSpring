@@ -22,9 +22,9 @@ public class ConfigTestController {
     private int p1;
     @Value("${global.params.p2}")
     private int p2;
-  //  @Value("${customer.params.a}")
+   @Value("${customer.params.x}")
     private int x;
-    //  @Value("${customer.params.y}")
+      @Value("${customer.params.y}")
     private int y;
 
     @GetMapping("/testConfig")
