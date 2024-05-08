@@ -8,10 +8,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 
-@ConfigurationProperties(prefix = "customer.params")
+@ConfigurationProperties(prefix = "global.params")
 @RefreshScope
 @Getter@Setter@NoArgsConstructor@AllArgsConstructor
 public class GlobalConfig {
-    int p1;int p2;
-
+    int p1;int p2; 
 }

@@ -22,13 +22,9 @@ public class ConfigTestController {
     private int p1;
     @Value("${global.params.p2}")
     private int p2;
-   @Value("${customer.params.x}")
-    private int x;
-      @Value("${customer.params.y}")
-    private int y;
 
     @GetMapping("/testConfig")
     public Map<String,Integer> ConfigTest(){
-        return Map.of("p1",p1,"p2",p2,"x",x,"y",y);
+        return Map.of("p1",p1,"p2",p2);
     }
 }
